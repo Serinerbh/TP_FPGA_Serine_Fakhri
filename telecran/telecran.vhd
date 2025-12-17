@@ -30,10 +30,10 @@ entity telecran is
         -- Coder
         i_left_ch_a  : in std_logic;
         i_left_ch_b  : in std_logic;
-        i_left_pb    : in std_logic;
+        i_left_pb    : in std_logic;   -- bouton gauche: effacement
         i_right_ch_a : in std_logic;
         i_right_ch_b : in std_logic;
-        i_right_pb   : in std_logic
+        i_right_pb   : in std_logic    -- bouton droit: dessin
     );
 end entity telecran;
 
@@ -89,7 +89,7 @@ architecture rtl of telecran is
      
     component dpram is
         generic (
-            mem_size   : natural := 720 * 480;  -- cohérent avec ton fichier fourni
+            mem_size   : natural := 720 * 480;
             data_width : natural := 8
         );
         port (
@@ -113,11 +113,11 @@ architecture rtl of telecran is
     signal s_count_right  : std_logic_vector(9 downto 0);
 
     -- hdmi counters
-    signal s_x_counter : unsigned(9 downto 0);
-    signal s_y_counter : unsigned(9 downto 0);
+    signal s_x_counter    : unsigned(9 downto 0);
+    signal s_y_counter    : unsigned(9 downto 0);
 
-    -- Data Enable interne (pour éviter de lire le port out)
-    signal s_hdmi_de : std_logic;
+    -- DE interne
+    signal s_hdmi_de      : std_logic;
 
     -- framebuffer
     signal s_pixel_write_data : std_logic_vector(7 downto 0) := x"FF"; 
@@ -125,6 +125,10 @@ architecture rtl of telecran is
     signal s_pixel_write_addr : natural range 0 to 720*480-1;
     signal s_pixel_read_addr  : natural range 0 to 720*480-1;
     signal s_pixel_we         : std_logic := '0';
+
+    -- Effacement
+    signal s_clear_mode   : std_logic := '0';
+    signal s_clear_addr   : natural range 0 to 720*480-1 := 0;
 
     -- Diviseur d'horloge
     signal slow_clk : std_logic := '0';
@@ -194,7 +198,7 @@ begin
             i_clk           => s_clk_27,
             i_rst_n         => s_rst_n,
             o_hdmi_tx_clk   => o_hdmi_tx_clk,
-            o_hdmi_tx_de    => s_hdmi_de,    -- vers signal interne
+            o_hdmi_tx_de    => s_hdmi_de,    
             o_hdmi_tx_hs    => o_hdmi_tx_hs,
             o_hdmi_tx_vs    => o_hdmi_tx_vs,
             o_pixel_en      => open,
@@ -203,7 +207,7 @@ begin
             s_y_counter     => s_y_counter
         );
 
-    -- Expose le DE interne vers le port de sortie
+    -- Expose DE interne
     o_hdmi_tx_de <= s_hdmi_de;
 
     -- RAM dual-port
@@ -225,29 +229,65 @@ begin
             o_q_b      => s_pixel_read_data
         );
 
-    -- écriture pixel (encodeurs)
-    process(s_count_left, s_count_right)
-    begin
-        s_pixel_write_addr <= to_integer(unsigned(s_count_right)) * 720 + to_integer(unsigned(s_count_left));
-        s_pixel_we <= '1';
-    end process;
-
-    -- lecture pixel (HDMI)
+    -- Adresse de lecture (HDMI)
     s_pixel_read_addr <= to_integer(s_y_counter) * 720 + to_integer(s_x_counter);
 
-    -- affichage HDMI (masqué par DE interne)
+    -- Affichage HDMI (masqué par DE)
     process(s_pixel_read_data, s_hdmi_de)
     begin
-        if s_hdmi_de = '1' then
-            if s_pixel_read_data(0) = '1' then
-                o_hdmi_tx_d <= x"FFFFFF"; -- blanc
+-- Dans le process vidéo
+if s_hdmi_de = '1' then
+    if s_clear_mode = '1' then
+        o_hdmi_tx_d <= x"000000"; -- masque noir pendant l’effacement
+    elsif s_pixel_read_data(0) = '1' then
+        o_hdmi_tx_d <= x"FFFFFF";
+    else
+        o_hdmi_tx_d <= x"000000";
+    end if;
+else
+    o_hdmi_tx_d <= x"000000";
+end if;
+
+    end process;
+
+    -- Écriture RAM: effacement (bouton gauche) ou dessin (bouton droit)
+-- Remplace juste le process d’écriture par celui-ci
+process(slow_clk, i_rst_n)
+begin
+    if i_rst_n = '0' then
+        s_clear_mode       <= '0';
+        s_clear_addr       <= 0;
+        s_pixel_we         <= '0';
+        s_pixel_write_addr <= 0;
+        s_pixel_write_data <= x"00";
+    elsif rising_edge(slow_clk) then
+        -- Effacement: bouton gauche actif bas (met à '1' si actif haut)
+        if i_left_pb = '0' and s_clear_mode = '0' then
+            s_clear_mode <= '1';
+            s_clear_addr <= 0;
+        end if;
+
+        if s_clear_mode = '1' then
+            -- Efface toute la RAM en écrivant 0
+            s_pixel_write_addr <= s_clear_addr;
+            s_pixel_write_data <= x"00";
+            s_pixel_we         <= '1';
+
+            if s_clear_addr = 720*480-1 then
+                s_clear_mode <= '0';
             else
-                o_hdmi_tx_d <= x"000000"; -- noir
+                s_clear_addr <= s_clear_addr + 1;
             end if;
         else
-            o_hdmi_tx_d <= x"000000";
+            -- Dessin continu (sans bouton). Si tu veux dessiner avec bouton droit, remets la condition i_right_pb = '1'.
+            s_pixel_write_addr <= to_integer(unsigned(s_count_right)) * 720
+                                + to_integer(unsigned(s_count_left));
+            s_pixel_write_data <= x"FF";
+            s_pixel_we         <= '1';
         end if;
-    end process;
+    end if;
+end process;
+
 
     -- LEDS
     o_leds      <= s_count_left;
