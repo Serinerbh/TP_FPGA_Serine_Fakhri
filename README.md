@@ -28,3 +28,15 @@ o_hdmi_tx_d(7 downto 0)   <= (others => '0');
 **2/ Résultat :**
 
 ![Texte alternatif](hdmi.jpeg)
+
+### Déplacement d'un pixel:
+
+![Texte alternatif](deplacement.jpeg)
+
+### Mémorisation:
+
+![Texte alternatif](memoir.jpeg)
+
+### Effacement:
+
+![Texte alternatif](Effacement.gif)
