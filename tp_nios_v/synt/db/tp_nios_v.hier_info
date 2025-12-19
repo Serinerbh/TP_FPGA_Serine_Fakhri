@@ -1,0 +1,15 @@
+|tp_nios_v
+i_clk => ~NO_FANOUT~
+i_rst_n => ~NO_FANOUT~
+o_led[0] << comb.DB_MAX_OUTPUT_PORT_TYPE
+o_led[1] << o_led[1].DB_MAX_OUTPUT_PORT_TYPE
+o_led[2] << o_led[2].DB_MAX_OUTPUT_PORT_TYPE
+o_led[3] << o_led[3].DB_MAX_OUTPUT_PORT_TYPE
+o_led[4] << o_led[4].DB_MAX_OUTPUT_PORT_TYPE
+o_led[5] << o_led[5].DB_MAX_OUTPUT_PORT_TYPE
+o_led[6] << o_led[6].DB_MAX_OUTPUT_PORT_TYPE
+o_led[7] << o_led[7].DB_MAX_OUTPUT_PORT_TYPE
+o_led[8] << o_led[8].DB_MAX_OUTPUT_PORT_TYPE
+o_led[9] << o_led[9].DB_MAX_OUTPUT_PORT_TYPE
+
+

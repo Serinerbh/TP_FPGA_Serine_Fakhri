@@ -1,0 +1,2803 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      The target system is: Generic -  - Nios V/m
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-kped6o"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-kped6o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-kped6o'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_0538c/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_0538c.dir/build.make CMakeFiles/cmTC_0538c.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-kped6o'
+        Building C object CMakeFiles/cmTC_0538c.dir/CMakeCCompilerABI.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_0538c.dir/CMakeCCompilerABI.c.obj -c C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_0538c.dir/CMakeCCompilerABI.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_0538c.dir/build.make:81: CMakeFiles/cmTC_0538c.dir/CMakeCCompilerABI.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-kped6o'
+        make: *** [Makefile:133: cmTC_0538c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working C compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-3mi0qv"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-3mi0qv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-3mi0qv'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_13f96/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_13f96.dir/build.make CMakeFiles/cmTC_13f96.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-3mi0qv'
+        Building C object CMakeFiles/cmTC_13f96.dir/testCCompiler.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_13f96.dir/testCCompiler.c.obj -c //GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-3mi0qv/testCCompiler.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_13f96.dir/testCCompiler.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_13f96.dir/build.make:81: CMakeFiles/cmTC_13f96.dir/testCCompiler.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-3mi0qv'
+        make: *** [Makefile:133: cmTC_13f96/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-hgtqw2"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-hgtqw2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-hgtqw2'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_b8e64/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_b8e64.dir/build.make CMakeFiles/cmTC_b8e64.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-hgtqw2'
+        Building C object CMakeFiles/cmTC_b8e64.dir/CMakeCCompilerABI.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_b8e64.dir/CMakeCCompilerABI.c.obj -c C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_b8e64.dir/CMakeCCompilerABI.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_b8e64.dir/build.make:81: CMakeFiles/cmTC_b8e64.dir/CMakeCCompilerABI.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-hgtqw2'
+        make: *** [Makefile:133: cmTC_b8e64/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working C compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-pls96y"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-pls96y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-pls96y'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_1a123/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_1a123.dir/build.make CMakeFiles/cmTC_1a123.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-pls96y'
+        Building C object CMakeFiles/cmTC_1a123.dir/testCCompiler.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_1a123.dir/testCCompiler.c.obj -c //GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-pls96y/testCCompiler.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_1a123.dir/testCCompiler.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_1a123.dir/build.make:81: CMakeFiles/cmTC_1a123.dir/testCCompiler.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-pls96y'
+        make: *** [Makefile:133: cmTC_1a123/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-uiyrnw"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-uiyrnw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-uiyrnw'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_36cfc/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_36cfc.dir/build.make CMakeFiles/cmTC_36cfc.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-uiyrnw'
+        Building C object CMakeFiles/cmTC_36cfc.dir/CMakeCCompilerABI.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_36cfc.dir/CMakeCCompilerABI.c.obj -c C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_36cfc.dir/CMakeCCompilerABI.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_36cfc.dir/build.make:81: CMakeFiles/cmTC_36cfc.dir/CMakeCCompilerABI.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-uiyrnw'
+        make: *** [Makefile:133: cmTC_36cfc/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working C compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-2s869k"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-2s869k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-2s869k'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_144d9/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_144d9.dir/build.make CMakeFiles/cmTC_144d9.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-2s869k'
+        Building C object CMakeFiles/cmTC_144d9.dir/testCCompiler.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_144d9.dir/testCCompiler.c.obj -c //GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-2s869k/testCCompiler.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_144d9.dir/testCCompiler.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_144d9.dir/build.make:81: CMakeFiles/cmTC_144d9.dir/testCCompiler.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-2s869k'
+        make: *** [Makefile:133: cmTC_144d9/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-z1sf0y"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-z1sf0y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-z1sf0y'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_d5071/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_d5071.dir/build.make CMakeFiles/cmTC_d5071.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-z1sf0y'
+        Building C object CMakeFiles/cmTC_d5071.dir/CMakeCCompilerABI.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_d5071.dir/CMakeCCompilerABI.c.obj -c C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_d5071.dir/CMakeCCompilerABI.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_d5071.dir/build.make:81: CMakeFiles/cmTC_d5071.dir/CMakeCCompilerABI.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-z1sf0y'
+        make: *** [Makefile:133: cmTC_d5071/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working C compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-vkxzw7"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-vkxzw7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-vkxzw7'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_c7cf8/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_c7cf8.dir/build.make CMakeFiles/cmTC_c7cf8.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-vkxzw7'
+        Building C object CMakeFiles/cmTC_c7cf8.dir/testCCompiler.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_c7cf8.dir/testCCompiler.c.obj -c //GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-vkxzw7/testCCompiler.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_c7cf8.dir/testCCompiler.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_c7cf8.dir/build.make:81: CMakeFiles/cmTC_c7cf8.dir/testCCompiler.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-vkxzw7'
+        make: *** [Makefile:133: cmTC_c7cf8/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      1
+      <command-line>: error: missing '(' after predicate
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-gcc.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-gcc.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld.exe: cannot open output file a.out: Invalid argument
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      riscv32-unknown-elf-g++.exe: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-g++.exe 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      Assembler messages:
+      Fatal error: can't create CMakeCXXCompilerId.o: Invalid argument
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      riscv32-unknown-elf-g++.exe: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-mconyx"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-mconyx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-mconyx'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_3040f/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_3040f.dir/build.make CMakeFiles/cmTC_3040f.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-mconyx'
+        Building C object CMakeFiles/cmTC_3040f.dir/CMakeCCompilerABI.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_3040f.dir/CMakeCCompilerABI.c.obj -c C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_3040f.dir/CMakeCCompilerABI.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_3040f.dir/build.make:81: CMakeFiles/cmTC_3040f.dir/CMakeCCompilerABI.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-mconyx'
+        make: *** [Makefile:133: cmTC_3040f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/bsp/CMakeLists.txt:5 (project)"
+    checks:
+      - "Check for working C compiler: C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe"
+    directories:
+      source: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-umetc3"
+      binary: "//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-umetc3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-umetc3'
+        
+        Run Build Command(s): C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/cmake/bin/cmake.exe -E env VERBOSE=1 C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe -f Makefile cmTC_14cd7/fast
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/build_tools/bin/make.exe  -f CMakeFiles/cmTC_14cd7.dir/build.make CMakeFiles/cmTC_14cd7.dir/build
+        make[1]: Entering directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-umetc3'
+        Building C object CMakeFiles/cmTC_14cd7.dir/testCCompiler.c.obj
+        C:/PROGRAMS/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe    -o CMakeFiles/cmTC_14cd7.dir/testCCompiler.c.obj -c //GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-umetc3/testCCompiler.c
+        Assembler messages:
+        Fatal error: can't create CMakeFiles/cmTC_14cd7.dir/testCCompiler.c.obj: Invalid argument
+        make[1]: *** [CMakeFiles/cmTC_14cd7.dir/build.make:81: CMakeFiles/cmTC_14cd7.dir/testCCompiler.c.obj] Error 1
+        make[1]: Leaving directory '//GALACTUS/users/joaopene16/Documents/TP-FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles/CMakeScratch/TryCompile-umetc3'
+        make: *** [Makefile:133: cmTC_14cd7/fast] Error 2
+        
+      exitCode: 2
+...

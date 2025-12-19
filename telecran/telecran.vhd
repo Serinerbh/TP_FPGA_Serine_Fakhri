@@ -30,16 +30,18 @@ entity telecran is
         -- Coder
         i_left_ch_a  : in std_logic;
         i_left_ch_b  : in std_logic;
-        i_left_pb    : in std_logic;   -- bouton gauche: effacement
+        i_left_pb    : in std_logic;
         i_right_ch_a : in std_logic;
         i_right_ch_b : in std_logic;
-        i_right_pb   : in std_logic    -- bouton droit: (non utilisé ici)
+        i_right_pb   : in std_logic
     );
 end entity telecran;
 
 architecture rtl of telecran is
 
+    
     -- COMPONENTS
+    
     component I2C_HDMI_Config 
         port (
             iCLK       : in std_logic;
@@ -72,63 +74,13 @@ architecture rtl of telecran is
         );
     end component;
 
-    component hdmi_controler is
-        port (
-            i_clk           : in  std_logic;
-            i_rst_n         : in  std_logic;
-            o_hdmi_tx_clk   : out std_logic;
-            o_hdmi_tx_de    : out std_logic;
-            o_hdmi_tx_hs    : out std_logic;
-            o_hdmi_tx_vs    : out std_logic;
-            o_pixel_en      : out std_logic;
-            o_pixel_address : out std_logic_vector(18 downto 0);
-            s_x_counter     : out unsigned(9 downto 0);
-            s_y_counter     : out unsigned(9 downto 0)
-        );
-    end component;
-     
-    component dpram is
-        generic (
-            mem_size   : natural := 720 * 480;
-            data_width : natural := 8
-        );
-        port (
-            i_clk_a    : in  std_logic;
-            i_clk_b    : in  std_logic;
-            i_data_a   : in  std_logic_vector(data_width-1 downto 0);
-            i_data_b   : in  std_logic_vector(data_width-1 downto 0);
-            i_addr_a   : in  natural range 0 to mem_size-1;
-            i_addr_b   : in  natural range 0 to mem_size-1;
-            i_we_a     : in  std_logic := '0';
-            i_we_b     : in  std_logic := '0';
-            o_q_a      : out std_logic_vector(data_width-1 downto 0);
-            o_q_b      : out std_logic_vector(data_width-1 downto 0)
-        );
-    end component;
-
+    
     -- SIGNALS
+    
     signal s_clk_27       : std_logic;
     signal s_rst_n        : std_logic;
     signal s_count_left   : std_logic_vector(9 downto 0);
     signal s_count_right  : std_logic_vector(9 downto 0);
-
-    -- hdmi counters
-    signal s_x_counter    : unsigned(9 downto 0);
-    signal s_y_counter    : unsigned(9 downto 0);
-
-    -- DE interne
-    signal s_hdmi_de      : std_logic;
-
-    -- framebuffer
-    signal s_pixel_write_data : std_logic_vector(7 downto 0) := x"FF"; 
-    signal s_pixel_read_data  : std_logic_vector(7 downto 0);
-    signal s_pixel_write_addr : natural range 0 to 720*480-1;
-    signal s_pixel_read_addr  : natural range 0 to 720*480-1;
-    signal s_pixel_we         : std_logic := '0';
-
-    -- Effacement
-    signal s_clear_mode   : std_logic := '0';
-    signal s_clear_addr   : natural range 0 to 720*480-1 := 0;
 
     -- Diviseur d'horloge
     signal slow_clk : std_logic := '0';
@@ -137,7 +89,7 @@ architecture rtl of telecran is
 begin
 
     
-    -- DIVISEUR D'HORLOGE
+    -- DIVISEUR D'HORLOGE (process placé APRÈS begin)
     
     process(i_clk_50, i_rst_n)
     begin
@@ -165,9 +117,7 @@ begin
             locked   => s_rst_n
         );
 
-    
-    -- I2C HDMI Config
-    
+
     I2C_HDMI_Config0 : I2C_HDMI_Config
         port map (
             iCLK       => i_clk_50,
@@ -177,7 +127,6 @@ begin
             HDMI_TX_INT=> i_hdmi_tx_int
         );
 
-    -- Encodeurs
 
     enc_left : enc
         generic map ( N => 10 )
@@ -189,6 +138,7 @@ begin
             count => s_count_left
         );
 
+		  
     enc_right : enc
         generic map ( N => 10 )
         port map (
@@ -200,112 +150,8 @@ begin
         );
 
     
-    -- HDMI Controller
-    
-    hdmi0 : hdmi_controler
-        port map (
-            i_clk           => s_clk_27,
-            i_rst_n         => s_rst_n,
-            o_hdmi_tx_clk   => o_hdmi_tx_clk,
-            o_hdmi_tx_de    => s_hdmi_de,    
-            o_hdmi_tx_hs    => o_hdmi_tx_hs,
-            o_hdmi_tx_vs    => o_hdmi_tx_vs,
-            o_pixel_en      => open,
-            o_pixel_address => open,
-            s_x_counter     => s_x_counter,
-            s_y_counter     => s_y_counter
-        );
-
-    -- Expose DE interne
-    o_hdmi_tx_de <= s_hdmi_de;
-
-    
-    -- RAM dual-port
-    
-pixel_mem : dpram
-    generic map (
-        mem_size   => 720*480,
-        data_width => 8
-    )
-    port map (
-        i_clk_a    => s_clk_27,      -- au lieu de slow_clk
-        i_clk_b    => s_clk_27,
-        i_data_a   => s_pixel_write_data,
-        i_data_b   => (others => '0'),
-        i_addr_a   => s_pixel_write_addr,
-        i_addr_b   => s_pixel_read_addr,
-        i_we_a     => s_pixel_we,
-        i_we_b     => '0',
-        o_q_a      => open,
-        o_q_b      => s_pixel_read_data
-    );
-
-    
-    -- Adresse de lecture (HDMI)
-    
-    s_pixel_read_addr <= to_integer(s_y_counter) * 720 + to_integer(s_x_counter);
-
-    -- Affichage HDMI : ce qu'il y a dans la RAM
-    
-    process(s_pixel_read_data, s_hdmi_de)
-    begin
-        if s_hdmi_de = '1' then
-            if s_pixel_read_data(0) = '1' then
-                o_hdmi_tx_d <= x"FFFFFF";  -- pixel blanc
-            else
-                o_hdmi_tx_d <= x"000000";  -- pixel noir
-            end if;
-        else
-            o_hdmi_tx_d <= x"000000";
-        end if;
-    end process;
-
-    
-    -- Écriture RAM: effacement (bouton gauche) ou dessin permanent
-   process(s_clk_27, i_rst_n)
-begin
-    if i_rst_n = '0' then
-        s_clear_mode       <= '0';
-        s_clear_addr       <= 0;
-        s_pixel_we         <= '0';
-        s_pixel_write_addr <= 0;
-        s_pixel_write_data <= x"00";
-        
-    elsif rising_edge(s_clk_27) then
-
-        s_pixel_we <= '0';
-
-        -- demande d’effacement
-        if (i_left_pb = '0') and (s_clear_mode = '0') then
-            s_clear_mode <= '1';
-            s_clear_addr <= 0;
-        end if;
-
-        if s_clear_mode = '1' then
-            -- effacement ultra rapide : 1 pixel par cycle @27 MHz
-            s_pixel_write_addr <= s_clear_addr;
-            s_pixel_write_data <= x"00";
-            s_pixel_we         <= '1';
-
-            if s_clear_addr = 720*480-1 then
-                s_clear_mode <= '0';
-            else
-                s_clear_addr <= s_clear_addr + 1;
-            end if;
-
-        else
-            -- dessin (toujours actif)
-            s_pixel_write_addr <= 
-                to_integer(unsigned(s_count_right)) * 720 +
-                to_integer(unsigned(s_count_left));
-
-            s_pixel_write_data <= x"FF";
-            s_pixel_we         <= '1';
-        end if;
-    end if;
-end process;
-
     -- LEDS
+    
     o_leds      <= s_count_left;
     o_de10_leds <= s_count_right(7 downto 0);
 
