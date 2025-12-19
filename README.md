@@ -27,4 +27,4 @@ o_hdmi_tx_d(7 downto 0)   <= (others => '0');
 
 **2/ Résultat :**
 
-![Texte alternatif](hdmi.PNG)
+![Texte alternatif](hdmi.jpeg)
