@@ -33,7 +33,7 @@ entity telecran is
         i_left_pb    : in std_logic;   -- bouton gauche: effacement
         i_right_ch_a : in std_logic;
         i_right_ch_b : in std_logic;
-        i_right_pb   : in std_logic    -- bouton droit: dessin
+        i_right_pb   : in std_logic    -- bouton droit: (non utilisé ici)
     );
 end entity telecran;
 
@@ -136,7 +136,9 @@ architecture rtl of telecran is
 
 begin
 
+    
     -- DIVISEUR D'HORLOGE
+    
     process(i_clk_50, i_rst_n)
     begin
         if i_rst_n = '0' then
@@ -152,7 +154,9 @@ begin
         end if;
     end process;
 
+    
     -- PLL
+    
     pll0 : pll
         port map (
             refclk   => i_clk_50,
@@ -161,7 +165,9 @@ begin
             locked   => s_rst_n
         );
 
+    
     -- I2C HDMI Config
+    
     I2C_HDMI_Config0 : I2C_HDMI_Config
         port map (
             iCLK       => i_clk_50,
@@ -172,6 +178,7 @@ begin
         );
 
     -- Encodeurs
+
     enc_left : enc
         generic map ( N => 10 )
         port map (
@@ -192,7 +199,9 @@ begin
             count => s_count_right
         );
 
+    
     -- HDMI Controller
+    
     hdmi0 : hdmi_controler
         port map (
             i_clk           => s_clk_27,
@@ -210,49 +219,50 @@ begin
     -- Expose DE interne
     o_hdmi_tx_de <= s_hdmi_de;
 
+    
     -- RAM dual-port
-    pixel_mem : dpram
-        generic map (
-            mem_size   => 720*480,
-            data_width => 8
-        )
-        port map (
-            i_clk_a    => slow_clk,
-            i_clk_b    => s_clk_27,
-            i_data_a   => s_pixel_write_data,
-            i_data_b   => (others => '0'),
-            i_addr_a   => s_pixel_write_addr,
-            i_addr_b   => s_pixel_read_addr,
-            i_we_a     => s_pixel_we,
-            i_we_b     => '0',
-            o_q_a      => open,
-            o_q_b      => s_pixel_read_data
-        );
+    
+pixel_mem : dpram
+    generic map (
+        mem_size   => 720*480,
+        data_width => 8
+    )
+    port map (
+        i_clk_a    => s_clk_27,      -- au lieu de slow_clk
+        i_clk_b    => s_clk_27,
+        i_data_a   => s_pixel_write_data,
+        i_data_b   => (others => '0'),
+        i_addr_a   => s_pixel_write_addr,
+        i_addr_b   => s_pixel_read_addr,
+        i_we_a     => s_pixel_we,
+        i_we_b     => '0',
+        o_q_a      => open,
+        o_q_b      => s_pixel_read_data
+    );
 
+    
     -- Adresse de lecture (HDMI)
+    
     s_pixel_read_addr <= to_integer(s_y_counter) * 720 + to_integer(s_x_counter);
 
-    -- Affichage HDMI (masqué par DE)
+    -- Affichage HDMI : ce qu'il y a dans la RAM
+    
     process(s_pixel_read_data, s_hdmi_de)
     begin
--- Dans le process vidéo
-if s_hdmi_de = '1' then
-    if s_clear_mode = '1' then
-        o_hdmi_tx_d <= x"000000"; -- masque noir pendant l’effacement
-    elsif s_pixel_read_data(0) = '1' then
-        o_hdmi_tx_d <= x"FFFFFF";
-    else
-        o_hdmi_tx_d <= x"000000";
-    end if;
-else
-    o_hdmi_tx_d <= x"000000";
-end if;
-
+        if s_hdmi_de = '1' then
+            if s_pixel_read_data(0) = '1' then
+                o_hdmi_tx_d <= x"FFFFFF";  -- pixel blanc
+            else
+                o_hdmi_tx_d <= x"000000";  -- pixel noir
+            end if;
+        else
+            o_hdmi_tx_d <= x"000000";
+        end if;
     end process;
 
-    -- Écriture RAM: effacement (bouton gauche) ou dessin (bouton droit)
--- Remplace juste le process d’écriture par celui-ci
-process(slow_clk, i_rst_n)
+    
+    -- Écriture RAM: effacement (bouton gauche) ou dessin permanent
+   process(s_clk_27, i_rst_n)
 begin
     if i_rst_n = '0' then
         s_clear_mode       <= '0';
@@ -260,15 +270,19 @@ begin
         s_pixel_we         <= '0';
         s_pixel_write_addr <= 0;
         s_pixel_write_data <= x"00";
-    elsif rising_edge(slow_clk) then
-        -- Effacement: bouton gauche actif bas (met à '1' si actif haut)
-        if i_left_pb = '0' and s_clear_mode = '0' then
+        
+    elsif rising_edge(s_clk_27) then
+
+        s_pixel_we <= '0';
+
+        -- demande d’effacement
+        if (i_left_pb = '0') and (s_clear_mode = '0') then
             s_clear_mode <= '1';
             s_clear_addr <= 0;
         end if;
 
         if s_clear_mode = '1' then
-            -- Efface toute la RAM en écrivant 0
+            -- effacement ultra rapide : 1 pixel par cycle @27 MHz
             s_pixel_write_addr <= s_clear_addr;
             s_pixel_write_data <= x"00";
             s_pixel_we         <= '1';
@@ -278,16 +292,18 @@ begin
             else
                 s_clear_addr <= s_clear_addr + 1;
             end if;
+
         else
-            -- Dessin continu (sans bouton). Si tu veux dessiner avec bouton droit, remets la condition i_right_pb = '1'.
-            s_pixel_write_addr <= to_integer(unsigned(s_count_right)) * 720
-                                + to_integer(unsigned(s_count_left));
+            -- dessin (toujours actif)
+            s_pixel_write_addr <= 
+                to_integer(unsigned(s_count_right)) * 720 +
+                to_integer(unsigned(s_count_left));
+
             s_pixel_write_data <= x"FF";
             s_pixel_we         <= '1';
         end if;
     end if;
 end process;
-
 
     -- LEDS
     o_leds      <= s_count_left;
