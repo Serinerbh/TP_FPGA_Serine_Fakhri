@@ -13,3 +13,18 @@ Le circuit de détection de front utilise deux bascules D (synchrones à l'horlo
 * **Resultat :**
   
 ![Texte alternatif](resultat_enc.gif)
+
+### Contrôleur HDMI:
+**1/ À quels bits correspondent chaque composante couleur ?**
+```vhdl
+o_hdmi_tx_d(23 downto 16) <= std_logic_vector(to_unsigned(s_x_counter, 8));
+o_hdmi_tx_d(15 downto 8)  <= std_logic_vector(to_unsigned(s_y_counter, 8));
+o_hdmi_tx_d(7 downto 0)   <= (others => '0');
+```
+  * Les bits 23 à 16 correspondent à la composante rouge,
+  * les bits 15 à 8 à la composante verte,
+  * et les bits 7 à 0 à la composante bleue.
+
+**2/ Résultat :**
+
+![Texte alternatif](resultat_enc.gif)
