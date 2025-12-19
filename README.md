@@ -40,3 +40,5 @@ o_hdmi_tx_d(7 downto 0)   <= (others => '0');
 ### Effacement:
 
 ![Texte alternatif](Effacement.gif)
+
+
