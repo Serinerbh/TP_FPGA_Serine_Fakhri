@@ -63,7 +63,7 @@ o_hdmi_tx_d(7 downto 0)   <= (others => '0');
   * les bits 15 à 8 à la composante verte,
   * et les bits 7 à 0 à la composante bleue.
 
-**2/ Résultat de Mapping couleur :**
+**Résultat de Mapping couleur :**
 
 ![Texte alternatif](hdmi.jpeg)
 
@@ -78,14 +78,30 @@ Le rendu visuel repose sur un test de comparaison en temps réel entre la positi
 
 ### Mémorisation:
 **Qu’est-ce qu’une RAM dual-port ?**
-Une mémoire Dual-Port est une unité de stockage (RAM) équipée de deux ports d’accès totalement indépendants (Port A et Port B). Chaque port possède ses propres ressources dédiées, ce qui permet des opérations simultanées sans conflit :
 
+Une mémoire Dual-Port est une unité de stockage (RAM) équipée de deux ports d’accès totalement indépendants (Port A et Port B). Chaque port possède ses propres ressources dédiées, ce qui permet des opérations simultanées sans conflit :
 - **Signaux propres** : Chaque port dispose de son horloge, de son bus d'adresse, de ses données et de son signal de commande d'écriture.
 - **Simultanéité** : Les deux ports peuvent lire ou écrire des données en même temps, de manière totalement asynchrone.
 
 ![Texte alternatif](memoir.jpeg)
 
 ### Effacement:
+- **Multiplexage de l’écriture dans la DPRAM** : Le Port A de la Dual-Port RAM
+est utilisé pour deux opérations différentes : le tracé normal et l’effacement. La sélection
+entre ces deux modes dépend de l’état de la machine d’états dédiée à l’effacement.
+     - Mode Effacement : l’adresse provient du compteur d’effacement et la valeur écrite
+est toujours x"00".
+     - Mode Stylet : l’adresse provient de la position du curseur et la valeur écrite est x"FF"
+lorsque l’utilisateur trace un point.
+
+Cette approche permet d’utiliser efficacement un même port mémoire pour deux tâches
+différentes sans conflit.
+- **Machine d’états pour l’effacement** : L’effacement complet de la mémoire est réalisé
+à travers une petite FSM composée de deux états : CLEAR_IDLE et CLEAR_RUN. Dans
+l’état d’attente, un appui sur le bouton déclenche la procédure d’effacement. Dans l’état
+d’exécution, la FSM incrémente séquentiellement l’adresse jusqu’à la dernière case de
+la RAM. L’effacement prend plusieurs cycles d’horloge, mais il n’interrompt jamais la
+lecture du Port B, ce qui permet au signal HDMI de rester parfaitement continu.
 
 ![Texte alternatif](Effacement.gif)
 
