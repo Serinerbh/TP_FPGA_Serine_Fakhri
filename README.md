@@ -1,5 +1,25 @@
 # TP_FPGA_Serine_Fakhri
 ## Petit projet : Écran magique
+### Introduction:
+Le projet consiste à réaliser une version numérique du « télécran », un dispositif permettant
+de tracer un dessin en déplaçant un point lumineux. Dans notre implémentation, le déplacement
+du “stylet” est assuré par les deux encodeurs incrémentaux présents sur la carte mezzanine, et
+l’affichage est généré via la sortie HDMI de la carte DE10-Nano.
+Le projet se déroule en plusieurs étapes progressives, chacune visant à développer un module
+essentiel du système final. Pour chaque sous-partie, la méthodologie reste identique :
+
+— concevoir un schéma ou une architecture répondant à la problématique ;
+
+— implémenter la solution en VHDL ;
+
+— simuler le fonctionnement pour validation ;
+
+— tester la solution sur la carte FPGA.
+
+L’objectif final est d’obtenir un affichage HDMI capable de montrer un pixel dont la position
+dépend des mouvements des encodeurs, ainsi que de mémoriser le tracé complet à l’aide d’une
+mémoire dual-port (DPRAM).
+
 ### Schéma explicatif de la problématique :
 ![Texte alternatif](problematique.png)
 
