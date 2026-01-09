@@ -24,18 +24,36 @@ mémoire dual-port (DPRAM).
 ![Texte alternatif](problematique.png)
 
 ### Gestion des encodeurs :
-* **Explication de la détection d’un front montant ou descendant:**
+* **Explication de la détection d’un front montant ou descendant :**
 
-![Texte alternatif](detecteur_front.PNG)
+![Texte alternatif](capteur_front.PNG)
 
-Le circuit de détection de front utilise deux bascules D (synchrones à l'horloge $clk$) montées en cascade afin de créer un décalage temporel du signal d'entrée $A$ . La sortie de la première bascule, $Q$, représente l'état du signal $A$ au cycle d'horloge précédent ($t-1$). La sortie de la deuxième bascule, $Q_{retardé}$ (entrée de la zone "???"), représente l'état du signal $A$ deux cycles avant ($t-2$). Pour détecter un front montant (passage de 0 à 1), on utilise la logique combinatoire $\text{Front Montant} = Q \text{ ET NON } Q_{retardé}$, ce qui vérifie que le signal est haut maintenant ($Q=1$) et qu'il était bas au cycle précédent ($Q_{retardé}=0$). Inversement, pour détecter un front descendant (passage de 1 à 0), on utilise la logique $\text{Front Descendant} = \text{NON } Q \text{ ET } Q_{retardé}$, ce qui vérifie que le signal est bas maintenant ($Q=0$) et qu'il était haut au cycle précédent ($Q_{retardé}=1$).
+Le circuit utilise deux bascules D montées en série pour mémoriser l'état présent et l'état précédent du signal d'entrée A :
+  - Première bascule D : Elle synchronise le signal d'entrée avec l'horloge (clk) et introduit un retard d'un cycle. Sa sortie représente l'état actuel échantillonné ($A_{n}$).
+  - Deuxième bascule D : Elle retarde encore le signal d'un cycle. Sa sortie représente donc l'état que le signal avait au cycle précédent ($A_{n-1}$).
 
-* **Resultat :**
+Le bloc "???" reçoit deux signaux : celui de la première bascule (état actuel) et celui de la deuxième bascule (état précédent). Pour détecter le front montant, il réalise l'opération suivante :
+  - L'entrée du haut (état actuel) reste telle quelle.
+  - L'entrée du bas (état précédent) passe par un inverseur (porte NOT).
+  - Les deux sont reliés à une porte ET.
+
+**Explication des encodeurs :**
+
+Cette partie du TP se concentre sur le décodage des encodeurs incrémentaux en faisant abstraction de l'affichage, en utilisant les signaux A et B en quadrature pour déterminer le sens de rotation. L'objectif est de piloter un registre de 10 bits (visualisé sur les LED) qui s'incrémente vers la droite lors d'un front montant de A (si B=0) ou d'un front descendant de A (si B=1), et se décrémente vers la gauche lors d'un front montant de B (si A=0) ou d'un front descendant de B (si A=1). Cette logique, parfaitement exacte, permet de traduire chaque changement d'état physique en un déplacement précis du curseur pour le futur projet « télécran ».
+
+**Resultat :**
   
 ![Texte alternatif](resultat_enc.gif)
 
 ### Contrôleur HDMI:
-**1/ À quels bits correspondent chaque composante couleur ?**
+Cette étape a porté sur la conception d'un contrôleur d'affichage modulable, dont la résolution est configurable via des paramètres generics (h_res, v_res, etc.). Le cœur du système repose sur deux compteurs synchrones pilotant un balayage de type raster : le premier incrémente les pixels horizontalement tandis que le second gère le passage aux lignes verticales.
+
+La gestion des signaux s'articule autour de trois axes principaux :
+ - **Synchronisation et validation** : Les signaux o_hdmi_hs et o_hdmi_vs assurent la synchronisation temporelle, tandis que la combinaison des zones actives (r_h_active et r_v_active) génère le signal o_hdmi_de (Data Enable), indispensable pour valider l'affichage des pixels.
+ - **Adressage mémoire** : Le contrôleur traduit les coordonnées cartésiennes $(X, Y)$ en une adresse linéaire pour la DPRAM via la formule $Pixel\_Address = X + (Y \times h\_res)$, garantissant un accès précis aux données stockées.
+ - **Rendu matériel** : L'analyse du schéma RTL confirme une architecture robuste basée sur des comparateurs et registres, tandis que le format RGB 24 bits a été retenu pour assurer une restitution fidèle des couleurs
+   
+**À quels bits correspondent chaque composante couleur ?**
 ```vhdl
 o_hdmi_tx_d(23 downto 16) <= std_logic_vector(to_unsigned(s_x_counter, 8));
 o_hdmi_tx_d(15 downto 8)  <= std_logic_vector(to_unsigned(s_y_counter, 8));
@@ -45,15 +63,25 @@ o_hdmi_tx_d(7 downto 0)   <= (others => '0');
   * les bits 15 à 8 à la composante verte,
   * et les bits 7 à 0 à la composante bleue.
 
-**2/ Résultat :**
+**2/ Résultat de Mapping couleur :**
 
 ![Texte alternatif](hdmi.jpeg)
 
 ### Déplacement d'un pixel:
+Cette phase du projet vise à asservir la position d'un pixel unique aux mouvements des deux encodeurs incrémentaux : l’encodeur de gauche commande l'axe horizontal ($X$) et celui de droite l'axe vertical ($Y$).
 
+Le rendu visuel repose sur un test de comparaison en temps réel entre la position cible (fournie par les encodeurs) et le balayage actuel du contrôleur vidéo :
+- **Condition d'allumage** : Si les coordonnées des compteurs de balayage (x_counter, y_counter) coïncident avec les valeurs stockées dans les registres des encodeurs, le signal de sortie o_hdmi_tx_d est forcé au blanc (x"FFFFFF").
+- **Condition d'extinction** : Dans tous les autres cas, le signal est maintenu au noir (x"000000").Cette méthode permet de vérifier le bon fonctionnement de la chaîne complète, du décodage matériel des encodeurs jusqu'à la génération du signal HDMI, avant d'implémenter la mémorisation du tracé dans la DPRAM.
+  
 ![Texte alternatif](deplacement.jpeg)
 
 ### Mémorisation:
+**Qu’est-ce qu’une RAM dual-port ?**
+Une mémoire Dual-Port est une unité de stockage (RAM) équipée de deux ports d’accès totalement indépendants (Port A et Port B). Chaque port possède ses propres ressources dédiées, ce qui permet des opérations simultanées sans conflit :
+
+- **Signaux propres** : Chaque port dispose de son horloge, de son bus d'adresse, de ses données et de son signal de commande d'écriture.
+- **Simultanéité** : Les deux ports peuvent lire ou écrire des données en même temps, de manière totalement asynchrone.
 
 ![Texte alternatif](memoir.jpeg)
 
