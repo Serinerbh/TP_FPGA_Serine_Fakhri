@@ -109,6 +109,7 @@ target_sources("${BspLibraryName}"
         HAL/src/intel_niosv_irq.c
         HAL/src/mtimer.c
         alt_sys_init.c
+        drivers/src/altera_avalon_i2c.c
         drivers/src/altera_avalon_jtag_uart_fd.c
         drivers/src/altera_avalon_jtag_uart_init.c
         drivers/src/altera_avalon_jtag_uart_ioctl.c
@@ -174,6 +175,8 @@ target_sources("${BspLibraryName}"
         HAL/inc/sys/ioctl.h
         HAL/inc/sys/msw_interrupt.h
         HAL/inc/sys/termios.h
+        drivers/inc/altera_avalon_i2c.h
+        drivers/inc/altera_avalon_i2c_regs.h
         drivers/inc/altera_avalon_jtag_uart.h
         drivers/inc/altera_avalon_jtag_uart_fd.h
         drivers/inc/altera_avalon_jtag_uart_regs.h

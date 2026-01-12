@@ -1,0 +1,9 @@
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/CMakeFiles/app.elf.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/CMakeFiles/create-objdump.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/CMakeFiles/niosv-stack-report.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/CMakeFiles/create-hex.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/CMakeFiles/edit_cache.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/CMakeFiles/rebuild_cache.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/bsp/CMakeFiles/hal2_bsp.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/bsp/CMakeFiles/edit_cache.dir
+U:/TP_Fpga/tp_nios_v/soft/app/build/Default/bsp/CMakeFiles/rebuild_cache.dir

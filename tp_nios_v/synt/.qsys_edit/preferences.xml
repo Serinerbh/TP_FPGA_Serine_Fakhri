@@ -7,6 +7,9 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
- <window width="1100" height="800" x="309" y="45" />
+ <library expandedCategories="Project,Library" />
+ <window width="1920" height="1040" x="0" y="0" />
+ <generation
+   synthesis="VHDL"
+   path="C:/Users/Superviseur/Documents/tp_nios_v/sopc/nios/synthesis/" />
 </preferences>

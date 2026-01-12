@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Dec 17 11:47:28 2025
+Analysis & Synthesis Status : Successful - Mon Jan 12 17:38:17 2026
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : tp_nios_v
 Top-level Entity Name : tp_nios_v
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 12
+Total registers : 3404
+Total pins : 16
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 1,051,720
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

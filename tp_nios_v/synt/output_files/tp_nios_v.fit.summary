@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Dec 17 11:47:54 2025
+Fitter Status : Successful - Mon Jan 12 17:42:12 2026
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : tp_nios_v
 Top-level Entity Name : tp_nios_v
 Family : Cyclone V
 Device : 5CSEBA6U23I7
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 41,910 ( < 1 % )
-Total registers : 0
-Total pins : 12 / 314 ( 4 % )
+Logic utilization (in ALMs) : 2,702 / 41,910 ( 6 % )
+Total registers : 3524
+Total pins : 16 / 314 ( 5 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 5,662,720 ( 0 % )
-Total RAM Blocks : 0 / 553 ( 0 % )
+Total block memory bits : 1,051,720 / 5,662,720 ( 19 % )
+Total RAM Blocks : 134 / 553 ( 24 % )
 Total DSP Blocks : 0 / 112 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

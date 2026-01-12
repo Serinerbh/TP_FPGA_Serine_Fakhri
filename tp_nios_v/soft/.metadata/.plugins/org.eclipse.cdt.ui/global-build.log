@@ -1,0 +1,11 @@
+17:44:17 **** Incremental Build of configuration Default for project app ****
+"C:\\PROGRAMS\\intelFPGA_lite\\24.1std\\riscfree\\build_tools\\bin\\make.exe" -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target app.elf
+[100%] Built target create-hex
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in app.elf.
+app.elf
+ * 41.35 KB - Program size (code + initialized data).
+ * 80.72 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report

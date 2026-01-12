@@ -1,10 +1,10 @@
 
 module nios (
 	clk_clk,
-	pio_0_external_connection_export,
-	reset_reset_n);	
+	reset_reset_n,
+	pio_0_external_connection_export);	
 
 	input		clk_clk;
-	output	[9:0]	pio_0_external_connection_export;
 	input		reset_reset_n;
+	output	[9:0]	pio_0_external_connection_export;
 endmodule

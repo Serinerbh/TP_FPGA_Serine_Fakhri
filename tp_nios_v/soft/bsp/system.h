@@ -4,7 +4,7 @@
  * Machine generated for CPU 'intel_niosv_m_0' in SOPC Builder design 'nios'
  * SOPC Builder design path: ../../sopc/nios.sopcinfo
  *
- * Generated: Wed Dec 17 11:49:07 CET 2025
+ * Generated: Mon Jan 12 17:38:13 CET 2026
  */
 
 /*
@@ -113,6 +113,7 @@
  *
  */
 
+#define __ALTERA_AVALON_I2C
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
@@ -135,19 +136,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x30050
+#define ALT_STDERR_BASE 0x30090
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x30050
+#define ALT_STDIN_BASE 0x30090
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x30050
+#define ALT_STDOUT_BASE 0x30090
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -167,6 +168,23 @@
 #define ALT_TIMESTAMP_CLK INTEL_NIOSV_M_0
 #define INTEL_FPGA_DFL_START_ADDRESS 0xffffffffffffffff
 #define INTEL_FPGA_USE_DFL_WALKER 0
+
+
+/*
+ * i2c_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_i2c_0 altera_avalon_i2c
+#define I2C_0_BASE 0x30040
+#define I2C_0_FIFO_DEPTH 4
+#define I2C_0_FREQ 50000000
+#define I2C_0_IRQ 1
+#define I2C_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define I2C_0_NAME "/dev/i2c_0"
+#define I2C_0_SPAN 64
+#define I2C_0_TYPE "altera_avalon_i2c"
+#define I2C_0_USE_AV_ST 0
 
 
 /*
@@ -249,7 +267,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x30050
+#define JTAG_UART_0_BASE 0x30090
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -296,7 +314,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x30040
+#define PIO_0_BASE 0x30080
 #define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_0_CAPTURE 0
