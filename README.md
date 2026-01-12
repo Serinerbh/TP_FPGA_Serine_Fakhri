@@ -105,4 +105,68 @@ lecture du Port B, ce qui permet au signal HDMI de rester parfaitement continu.
 
 ![Texte alternatif](Effacement.gif)
 
+# Compte Rendu : TP FPGA Avancé - Implémentation d'un Soft-Processeur Nios V
+
+## 1. Introduction
+
+Ce compte rendu détaille les objectifs, la méthodologie et les réalisations du Travaux Pratiques (TP) axé sur l'implémentation et l'utilisation d'un soft-processeur Nios V sur une carte FPGA de type Cyclone V. Le TP vise à fournir une compréhension approfondie de l'intégration hardware/software, du développement de systèmes embarqués et de l'interaction avec des périphériques externes (LEDs, accéléromètre ADXL345).
+
+## 2. Partie 1 : Implémentation du Soft-Processeur Nios V
+
+### 2.1. Architecture et Outils
+
+L'environnement de développement repose sur Quartus Prime pour la synthèse et la compilation du matériel, et Platform Designer pour la conception du soft-processeur. Le Nios V est configuré avec une mémoire on-chip, un JTAG UART pour la communication, et un contrôleur PIO pour interagir avec les LEDs de la carte.
+
+**Mise en œuvre :**
+1.  **Structure du Projet :** Organisation des fichiers en répertoires distincts (`rtl`, `synt`, `sim`, `sopc`, `soft`) pour la clarté et la gestion du projet.
+2.  **Projet Quartus :** Création des fichiers `.qpf` et `.qsf` avec les assignations globales et les contraintes spécifiques à la carte (horloge, reset, LEDs).
+3.  **Platform Designer :**
+    *   Instanciation du processeur `Nios V/m Microcontroller`.
+    *   Intégration d'une mémoire `On-Chip Memory` (128 KB) et d'un `JTAG UART`.
+    *   Ajout d'un `PIO (Parallel I/O)` de 10 bits pour contrôler les LEDs.
+    *   Configuration des interconnexions (horloge, reset, bus de données et d'instructions) entre le processeur et ses périphériques.
+    *   Assignation des adresses de base et configuration du vecteur de reset.
+    *   Génération du système en VHDL.
+
+```
+[l'image de la topologie générale du système dans Platform Designer]
+```
+
+4.  **Intégration VHDL :** Inclusion du code HDL généré par Platform Designer dans le fichier VHDL de top-niveau du projet Quartus, et instanciation du soft-processeur.
+
+### 2.2. Développement Logiciel
+
+L'environnement de développement logiciel est géré par la chaîne d'outils Nios V et l'IDE RiscFree.
+
+**Mise en œuvre :**
+1.  **Création de la BSP :** Utilisation de `niosv-bsp` pour générer le Board Support Package, essentiel pour l'interaction entre le code C et le matériel Nios V.
+2.  **Création de l'Application :** Génération de la structure de l'application C avec `niosv-app`.
+3.  **IDE RiscFree :** Importation de la BSP et de l'application dans RiscFree pour l'édition, la compilation et le débogage du code.
+
+### 2.3. Validation Initiale
+
+#### 2.3.1. "Hello, world!"
+
+**Objectif :** Vérifier le bon fonctionnement du soft-processeur et de la communication JTAG UART.
+
+**Implémentation :** Un programme C simple affichant "Hello, world!" sur la console via `printf`.
+
+**Observations :** Le message "Hello, world!" doit s'afficher correctement dans le terminal `juart-terminal` après la programmation et le lancement du code.
+
+![Texte alternatif](hello_world.png)
+
+#### 2.3.2. Le "Chenillard"
+
+**Objectif :** Tester le contrôle des GPIO (LEDs) depuis le code C.
+
+**Implémentation :** Un programme C qui fait défiler une séquence lumineuse sur les 10 LEDs, en utilisant les macros d'accès au PIO (`IOWR_ALTERA_AVALON_PIO_DATA`) et des fonctions de délai (`usleep`).
+
+**Observations :** Une séquence lumineuse (chenillard) doit être visible sur les LEDs de la carte FPGA.
+
+```
+[l'image Chenillard]
+```
+
+
+
 
