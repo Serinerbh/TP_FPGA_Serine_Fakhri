@@ -218,4 +218,5 @@ Cette section explore l'intégration d'un capteur externe, l'accéléromètre AD
     *   Lecture des données d'accélération sur les axes X, Y, Z.
 5.  **Application "Niveau à bulles" :** Interprétation des valeurs d'accélération pour déterminer l'inclinaison et allumer les LEDs correspondantes pour simuler le niveau.
 
+![Texte alternatif](lol.gif)
 
