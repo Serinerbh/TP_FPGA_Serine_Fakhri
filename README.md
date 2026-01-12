@@ -211,11 +211,11 @@ Cette section explore l'intégration d'un capteur externe, l'accéléromètre AD
 1.  **Extension du SOPC :** Ajout d'un contrôleur I2C (Avalon I2C (Master) Intel FPGA IP) au système Nios V dans Platform Designer.
 2.  
 3.  **Mise à jour Hardware/Software :** Intégration du contrôleur I2C au VHDL top-niveau et régénération/réimportation de la BSP et de l'application.
-4.  
-5.  **Communication I2C :**
+  
+4.  **Communication I2C :**
     *   Utilisation des fonctions de la bibliothèque `altera_avalon_i2c.h` pour initialiser le bus I2C.
     *   Communication avec l'ADXL345 : lecture du registre `DEVID` pour validation, activation du capteur (`POWER_CTL`).
     *   Lecture des données d'accélération sur les axes X, Y, Z.
-6.  **Application "Niveau à bulles" :** Interprétation des valeurs d'accélération pour déterminer l'inclinaison et allumer les LEDs correspondantes pour simuler le niveau.
+5.  **Application "Niveau à bulles" :** Interprétation des valeurs d'accélération pour déterminer l'inclinaison et allumer les LEDs correspondantes pour simuler le niveau.
 
 
