@@ -162,7 +162,38 @@ L'environnement de développement logiciel est géré par la chaîne d'outils Ni
 **Observations :** Une séquence lumineuse (chenillard) doit être visible sur les LEDs de la carte FPGA.
 
 ```
-[code Chenillard]
+#include <unistd.h> 
+#include <stdint.h>
+
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+int main(void)
+{
+const int NLEDS = 10;
+const useconds_t DELAY_US = 100000; 
+
+while (1)
+{
+// Aller : LED0 -> LED9
+for (int i = 0; i < NLEDS; i++)
+{
+uint32_t pattern = (1u << i); // un seul bit à 1
+IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, pattern);
+usleep(DELAY_US);
+}
+
+// Retour : LED8 -> LED1 (pour éviter de répéter LED9 puis LED0)
+for (int i = NLEDS - 2; i >= 1; i--)
+{
+uint32_t pattern = (1u << i);
+IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, pattern);
+usleep(DELAY_US);
+}
+}
+
+return 0;
+}
 ```
 
 ![Texte alternatif](chin.gif)
