@@ -162,9 +162,10 @@ L'environnement de développement logiciel est géré par la chaîne d'outils Ni
 **Observations :** Une séquence lumineuse (chenillard) doit être visible sur les LEDs de la carte FPGA.
 
 ```
-[l'image Chenillard]
+[code Chenillard]
 ```
 
+![Texte alternatif](chin.gif)
 
 
 
