@@ -128,9 +128,7 @@ L'environnement de développement repose sur Quartus Prime pour la synthèse et 
     *   Assignation des adresses de base et configuration du vecteur de reset.
     *   Génération du système en VHDL.
 
-```
-[l'image de la topologie générale du système dans Platform Designer]
-```
+![Texte alternatif](config_hor.PNG)
 
 4.  **Intégration VHDL :** Inclusion du code HDL généré par Platform Designer dans le fichier VHDL de top-niveau du projet Quartus, et instanciation du soft-processeur.
 
