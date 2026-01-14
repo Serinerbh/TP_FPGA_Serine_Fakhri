@@ -27,6 +27,8 @@ mémoire dual-port (DPRAM).
 * **Explication de la détection d’un front montant ou descendant :**
 
 ![Texte alternatif](capteur_front.PNG)
+<img width="1153" height="393" alt="image" src="https://github.com/user-attachments/assets/ae026bac-9ed4-46eb-bd67-07bb7d650ca7" />
+
 
 Le circuit utilise deux bascules D montées en série pour mémoriser l'état présent et l'état précédent du signal d'entrée A :
   - Première bascule D : Elle synchronise le signal d'entrée avec l'horloge (clk) et introduit un retard d'un cycle. Sa sortie représente l'état actuel échantillonné ($A_{n}$).
